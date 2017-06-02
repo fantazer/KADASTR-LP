@@ -1,0 +1,704 @@
+.header
+	+below(768px)
+		//display none
+	padding 10px 0
+	background #4c636d
+	//border-bottom 1px solid #3390b6
+.top-line
+	color white
+//.main-cont
+.top-line-wrap
+	+below(1200px)
+		flex(mid)
+	flex(between)
+.mobile-logo
+	+above(1200px)
+		display none
+	+below(1200px)
+		flex(mid)
+	img
+		width 50%
+		max-width 300px
+.top-line-info
+	+below(1200px)
+		display none
+	width 80%
+	f()
+.top-line-el
+	f()
+	align-items center
+	margin-right 20px
+.top-line-el-title
+	+below(1440px)
+		font-size 12px
+	font-weight bold 
+	margin-right 10px
+	font-size 14px
+	up()
+.top-line-el-info
+	font-size 14px
+	padding 3px 20px
+	background #384950
+	br(20px) 
+.top-line-loc
+	+below(1200px)
+		display none
+	f()
+.top-line-loc-el
+	f()
+	justify-content center
+	margin-left 20px
+.top-line-loc-icon
+	.icon
+		size 25px
+		fill white
+		margin-right 10px
+.nav
+	background #43555d
+	box-shadow 0px 5px 5px rgba(44, 44, 44, 0.63)
+.nav-wrap
+	+below(1200px)
+		padding 10px
+	flex(between)
+	//padding 10px 0
+	position relative
+.menu-wrap
+	+above(1200px)
+		display block!important
+	+below(1200px)
+		display none
+		position absolute
+		top 100%
+		left -10px
+		z-index 300
+		width calc(100% + 20px)
+		background #1c576e 
+	width 80%
+.menu
+	+below(1200px)
+		fw()
+	flex(between)
+.menu-el
+	+below(1200px)
+		width 100%
+		text-align center
+		border-bottom 1px solid #24657e
+	up()
+	display: inline-block
+	text-align: center
+	padding 15px 5px
+	font-size 11px
+	width: 100%
+	//font-weight bold
+	color white
+.menu-el--active
+	background #263238
+.nav-phone-el
+	+above(1200px)
+		.icon
+			display none
+	+below(1200px)
+		flex(mid)
+	.icon
+		size 20px
+		fill white
+		margin-right 20px
+	font-weight bold
+	font-size 20px 
+	display block
+	color white
+	
+//.section 
+.section.section-main 
+	+below(1200px)
+		padding-top 120px
+	+below(768px)
+		padding-top 150px
+	padding-top 100px
+	padding-bottom 0
+.section-main
+	position relative
+	bgi("bg-2.jpg")
+	bg-full()
+	
+.section-main-filter
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(76, 99, 109, 0.64)
+//.main-cont
+.main-wrap 
+	+below(768px)
+		fw()
+		height: auto
+		flex(between)
+	f()
+	align-items initial
+	height: 90vh
+.main-info 
+	+below(768px)
+		width 100%
+		padding 0
+	fl()
+	flex(mid)
+	padding 40px 0
+	width 60%
+	align-items:initial
+
+.main-logo
+	+below(768px)
+		display none
+	margin-bottom 20px 
+	img
+		+below(1200px)
+			width 50%
+		width 50%
+.main-title 
+	+below(1200px)
+		font-size 24px
+		margin-bottom 0
+	+below(768px)
+		text-align center
+		font-size 18px
+		margin-bottom: 30px
+		font-weight: bold
+		up()
+
+	font-size 56px
+	font-weight: bold
+	line-height: 64px
+	color white
+	margin-bottom 30px
+
+.price-space
+	font-size: 28px
+	font-weight: 600
+	margin-bottom: 20px
+	text-align: center
+	span
+		font-size: 12px
+.main-percent 
+	+below(768px)
+		font-size 120px
+		text-align center
+		line-height 140px
+	font-weight bold
+	color white
+	font-size 120px
+.main-text 
+	+below(768px)
+		font-size 18px
+		margin-bottom 20px
+		text-align center
+	//up()
+	font-size 20px
+	color white
+	margin-bottom 40px
+.main-price-row 
+	+below(768px)
+		fw()
+	flex(between)
+	justify-content flex-start
+.main-price 
+	+below(1200px)
+		font-size 18px
+	+below(768px)
+		width 100%
+		margin-right 0 
+		margin-bottom 20px
+	margin-right 40px
+	padding 10px 60px
+	text-align center
+	color blue
+	background white 
+	font-size 26px
+	br(30px)
+	color #4c636d
+	border 1px solid #4c636d
+.main-price--dark 
+	background #4c636d
+	color white
+	text-decoration line-through  
+.main-form 
+	+below(768px)
+		width 100%
+		padding 20px
+		form
+			width 100%
+		textarea
+			width 100%
+	background white 
+	width 35%
+	flex(mid)
+	fl()
+	padding 0 30px
+	input
+		width 100%
+	.btn
+		border 0px
+		background blue
+		color white
+		padding 15px 0
+		br(25px) 
+		margin-top 40px
+.form-title
+	+below(1200px)
+		font-size 16px
+	up()
+	text-align center
+	font-size 28px
+	font-weight bold 
+.form-title-sub
+	text-align: center
+	up()
+	font-size 18px
+	font-weight bold 
+.form-month
+	up()
+	font-weight bold 
+	font-size 32px
+	margin-bottom 30px
+.form-foter-text
+	+below(1200px)
+		font-size 12px
+	text-align center
+	color grey
+.section 
+	+below(1200px)
+		padding 50px 0
+	+below(768px)
+		padding 30px 0
+	padding 120px 0
+.section-info 
+	//background #43555d
+//.main-cont 
+.section-info__wrap 
+	+below(1200px)
+		fw()
+	flex(between)
+.section-info__content 
+	+below(1200px)
+		width 100%
+	width 55%
+.section-info-two
+	p
+		color white
+	a
+		text-decoration underline
+		color white!important	
+.section-info__title 
+	+below(768px)
+		font-size 20px
+	up() 
+	font-size 34px
+	font-weight bold
+	color #43555d
+.section-info__text 
+	+below(1200px)
+		order 1
+		margin-bottom 30px
+	color #43555d
+	font-weight 300
+	a
+		color white
+		text-decoration underline
+	p
+		font-size: 14px
+.section-info__img 
+	+below(1200px)
+		width 100%
+		flex(mid)
+		order 2
+	width 40%
+	flex(mid)
+	img
+		+below(1200px)
+			max-width 400px
+		+below(768px)
+			width: 100%
+		//width 100%
+.section-info-two
+	background #43555d
+	.section-info__title
+		color white
+.section-filter
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(76, 99, 109, 0.91)
+//.section 
+.section-step 
+	position relative
+	bgi('item-5.jpg')
+	.section-title 
+		color white
+.section-title 
+	+below(768px)
+		font-size 22px
+	font-size 42px
+	text-align center
+	up()
+.step 
+	+below(768px)
+		margin-top 30px
+	margin-top 100px
+//.step-row 
+.step-el 
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	width 50%
+	flex(between)
+	align-items initial
+.step-content 
+	+below(768px)
+		width 100%
+	f()
+	br(10px)
+	background white 
+	width 80%
+.step-numb 
+	+below(768px)
+		width 90px
+	color black
+	flex(mid)
+	border-right 1px solid blue
+	padding  20px 
+	font-size 32px
+	font-weight bold 
+.step-text
+	+below(768px)
+		width calc(100% - 90px)
+		justify-content flex-start
+	flex(mid) 
+	padding 20px 
+	font-size 14px
+.step-line 
+	+below(768px)
+		display none
+	width 10%
+	border-right 2px solid white
+	position relative
+	height auto
+.step-dot
+	size 30px
+	round()
+	background white  
+	margin-top -15px
+	position absolute
+	right -15px
+	top 50%
+.step-row--right
+	f()
+	justify-content flex-end
+	width 100%
+	margin-left -2px
+	.step-line
+		height 100%
+		border 0
+		border-left 2px solid white
+	.step-dot
+		right initial
+		left -15px
+//.step-dot 
+.step-total
+	+below(768px)
+		margin-top 30px
+		width 100%
+		font-size 16px
+	up()
+	text-align center
+	color white
+	width 60%
+	margin 0px auto
+	font-size 22px
+	margin-top 100px
+.step-triangle
+	triangle('down', 20px, white)
+	position absolute
+	bottom -20px
+	left -20px 
+	
+.section-price
+	+below(1024px)
+		background: none
+	position relative
+	bgi('item-4-light.png')
+	bg-full()
+
+//.section-filter 
+//.main-cont 
+//.section-title 
+.price 
+	+below(978px)
+		fw()
+		margin-top 30px
+	flex(between)
+	align-items: initial
+	margin-top 80px
+.price-col 
+
+	+below(1200px)
+		width: 100%
+		margin-bottom: 20px
+	+below(978px)
+		padding 20px
+	flex(mid)
+	fl()
+	justify-content flex-start
+	width 24.5%
+	padding 40px 30px
+	background white 
+.price-icon 
+	+below(768px)
+		size 90
+		margin-bottom 10px
+	flex(mid)
+	round()
+	size 140
+	border 2px solid #dddddd
+	margin-bottom 40px
+	.icon 
+		+below(768px)
+			size 30
+		size 60
+.price-name 
+	color grey
+.price-title 
+	up()
+	font-size 32px
+	font-weight bold 
+.price-text 
+	+below(768px)
+		margin-bottom 10px
+	font-size 14px
+	color grey
+	text-align center
+	margin-bottom 20px
+.price-title-sub 
+	up()
+.price-val 
+	font-size 100px
+.price-val--text
+	+below(768px)
+			height auto	
+			padding 20px 0
+	font-size 36px
+	height 190px
+	flex(mid)
+.price-valut 
+	up()
+	color grey
+	font-size 20px
+.price-get 
+	margin-top 40px
+	@extend .btn
+	width 100%
+	text-align center
+	color white
+	border 0
+	background blue
+	padding 15px 5px
+	br(20px)
+	tr(all)
+	&:hover
+		background darken(blue,10)
+.price-col--blue
+	background #4c636d
+	color white 
+	.price-icon 
+		border 2px solid white
+		.icon 
+			fill white
+	.price-name, .price-title-sub, .price-text, .price-valut
+		color white 
+	.price-get 
+		background white 
+		color blue
+.price-col--main
+	+below(768px)
+		padding 20px
+	padding 60px 40px
+	box-shadow 0px 0px 20px #0d3a4d
+	z-index 20
+
+.advance 
+	+below(768px)
+		fw()
+	flex(between)
+	fw()
+	margin-top 80px
+.advance-el 
+	+below(768px)	
+		width 100%
+		margin-bottom 20px
+		flex(mid)
+	width 45%
+	flex(between)
+	margin-bottom 40px
+.advance-icon 
+	+below(968px)	
+		padding 20px
+	+below(768px)	
+		margin-right 20px
+	round()
+	flex(mid)
+	border 2px solid #384950
+	padding 40px
+	.icon 
+		+below(968px)	
+			size 40px
+		size 70px
+.advance-text 
+	+below(968px)	
+		font-size 14px
+	width 60%
+	font-size 18px
+.section-cert
+	position relative
+	bgi('bg-1.jpg')
+	bg-full()
+	.section-title
+		color white
+
+//slider
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -30px
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+.owl-prev
+	+below(768px)
+		left 2%
+	left -5%
+.owl-next
+	+below(768px)
+		right 2%
+	right -5%
+.slider-control
+	size 40
+	fill white
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+.owl-dot.active
+	background #322f40
+//slider-end
+
+.cert
+	width 90%
+	margin 0 auto
+	margin-top 80px
+.section-contact
+	background #F6F6F6 
+.contact
+	form
+		width 100%
+	textarea
+		width 100%
+	.main-form
+		padding 40px
+		border 1px solid #e3e3e3
+.contact-form
+	+below(768px)
+		fw()
+		margin-top 30px
+	flex(between)
+	align-items flex-start
+	margin-top 80px
+	.main-form
+		+below(768px)
+			width 100%
+			margin-bottom 20px
+			padding 30px 10px
+		width 40%
+.contact-info
+	+below(768px)
+		width 100%
+	width 55%
+.map
+	margin-bottom 40px
+.contact-row
+	f()
+	align-items center
+	margin-bottom 20px
+	.icon
+		margin-right 20px
+		+below(768px)
+			size 20px
+		size 40px
+.contact-text
+	+below(768px)
+		font-size 14px
+		width 100%
+	font-size 18px
+	width 60%
+.head-container
+	position fixed
+	width 100%
+	top 0
+	left 0
+	z-index 200
+
+//modal
+.modal
+	display none
+	background white
+	padding 30px 20px
+	br(4px) 
+	position relative
+	.icon-times
+		position absolute
+		top 10px
+		right 10px
+		font-size 22px
+		cp()
+
+.modal-true
+	background green
+	padding 4%
+.modal-wrap
+	flex(mid)
+	fl()
+	fw()
+	.icon
+		fill white
+		size 80px 
+		margin-bottom 20px
+.modal-true-text
+	text-align center
+	color white
+	font-size 20px
+	up()
+label.error
+	margin-bottom 10px
+	display inline-block
+input.error
+	border-color red
+textarea.error
+	border-color red
+//modal-end
+
+.nav-toggle
+	flex(mid)
+	+above(1200px)
+		display none
+	.icon
+		fill white
+		size 20px

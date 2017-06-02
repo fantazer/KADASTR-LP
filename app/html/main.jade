@@ -1,0 +1,300 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.head-container
+	//header
+	.header
+		.top-line
+			.main-cont
+				.top-line-wrap
+					.mobile-logo
+						img(src="img/logo.png", alt="")
+					.top-line-info
+						.top-line-el
+							.top-line-el-title Работа горячей линии:
+							.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
+						.top-line-el
+							.top-line-el-title Прием онлайн-заявок:
+							.top-line-el-info Круглосуточно
+					.top-line-loc
+						.top-line-loc-el
+							.top-line-loc-icon
+								+icon("metro","icon")
+							.top-line-loc-text Варшавская
+						.top-line-loc-el
+							.top-line-loc-icon
+								+icon("metro","icon")
+							.top-line-loc-text Каширская
+	//header-end
+
+	//nav
+	.nav
+		.main-cont
+			.nav-wrap
+				.nav-toggle
+					+icon("menu","icon")
+				.menu-wrap
+					.menu
+						a(href="#info" rel='m_PageScroll2id').menu-el Зачем это нужно
+						a(href="#step" rel='m_PageScroll2id').menu-el Как мы работаем
+						a(href="#price" rel='m_PageScroll2id').menu-el Наши цены
+						a(href="#advance" rel='m_PageScroll2id').menu-el Почему выбирают нас
+						a(href="#sert" rel='m_PageScroll2id').menu-el Наши лицензии
+						a(href="#contact" rel='m_PageScroll2id').menu-el Контакты
+				.nav-phone 
+					a(href="tel:+7 (495) 514-84-13").nav-phone-el 
+						+icon("phone-call","icon")
+						| +7 (495) 514-84-13
+
+
+	//nav-end
+
+//section main
+.section.section-main
+	.section-main-filter
+	.main-cont
+		.main-wrap
+			.main-info
+				.main-logo
+					img(src="img/logo.png", alt="")
+				.main-title Образование земельного <br> участка под многоквартирным домом
+
+
+				.main-percent 20%
+				.main-text скидка на комплекс работ
+				.main-price-row
+					.main-price 56 000 руб
+					.main-price.main-price--dark 70 000 руб
+			.main-form
+				.form-title успейте оставить заявку
+				.form-title-sub До конца 
+				.form-month Мая 
+				form(action="#")
+					input(type="text" placeholder="Ваше имя" name="name")
+					input(type="text" placeholder="Ваш телефон" name="phone")
+					input(type="text" placeholder="Ваша почта" name="mail")
+					textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+					input(type="submit" value="Отправить заявку").btn
+				.form-foter-text  Оставьте заявку и мы ответим вам в самое короткое время. Ждем вас!
+//section main-end
+
+//section info
+#info.section.section-info
+	.main-cont
+		.section-info__wrap
+			.section-info__content
+				.section-info__title Зачем это нужно
+				.section-info__text
+					p Согласно Федеральному закону №189-ФЗ от 29.12.2004 «О введении в действие Жилищного кодекса Российской Федерации» в существующей застройке поселений земельный участок, на котором расположены многоквартирный дом и иные входящие в состав такого дома объекты недвижимого имущества, является общей долевой собственностью собственников помещений в многоквартирном доме.
+					p Прошедший процедуру государственного кадастрового учета земельный участок, на котором расположены многоквартирный дом и иные входящие в состав такого дома объекты недвижимого имущества, переходит бесплатно в общую долевую собственность собственников помещений в многоквартирном доме. 
+					p При приобретении прав на квартиру в многоквартирном доме по умолчанию приобретаются права и на земельный участок под таким домом. То есть «кусочек» земельного участка, пропорциональный площади квартиры, изначально входит в стоимость квартиры. Доля в общей собственности пропорциональна площади квартиры собственника и не может быть выделена в натуре
+			.section-info__img
+				img(src="img/item-2.png", alt="")
+//section info-end
+
+//section-info
+.section.section-info-two
+	.main-cont
+		.section-info__wrap
+			.section-info__img
+				img(src="img/item-3.png", alt="")
+			.section-info__content
+				.section-info__title Как это может вам помочь
+				.section-info__text
+					p Сформировав участок под многоквартирным домом Вы убережете себя от незаконного захвата третьими лицами придомовой территории Вашего дома сохранив подходы и подъезды к дому, гостевые автостоянки, территории зеленых насаждений с площадками для игр и отдыха.
+					p Кроме того, если у жителей дома оформлено право собственности на участок, то они имеют право ограничить доступ на него. Таким образом, по согласованию с собственниками всех помещений в многоквартирном доме, Вы сможете ограничить доступ автомобилей на придомовую территорию установив на въезде шлагбаум.
+
+					p С 01.03.2015 г. формирование и постановка на государственный кадастровый учет земельного участка под многоквартирным домом осуществляется исключительно в соответствии с утвержденным проектом межевания территории, который устанавливает границы и площадь такого земельного участка.
+					p Информация об утвержденных проектах межевания представлена в Интегрированной автоматизированной информационной системе обеспечения градостроительной деятельности города Москвы на сайте Москомархитектуры <a href="http://ogd.mka.mos.ru">http://ogd.mka.mos.ru</a> , а также в Электронном атласе Департамента городского имущества г. Москвы <a href="http://ogd.mka.mos.ru">http://ogd.mka.mos.ru</a> в разделе «Участки межевания жилых кварталов» в категории «Территориальное деление».
+//section-info-end
+
+//section-step
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text Отправляете нам заявку или звоните
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text Анализируем документы по Вашему объекту.
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text Заключаем договор
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text Производим геодезические обмеры. Утверждаем с Вами границы земельного участка.
+			
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text При необходимости подготавливаем необходимые письма и обращения в ДГИ г. Москвы.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 06
+						.step-text Согласовываем местоположение границ образуемого участка с соседними земельными участками. 
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 07
+						.step-text Формируем межевой план
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+						.step-triangle
+					.step-content
+						.step-numb 08
+						.step-text Подаем межевой план в Орган государственной регистрации.
+		.step-total Получаем выписку из ЕГРН на сформированный под Вашим многоквартирным домом земельный участок.
+//section-step-end
+
+//section-price
+#price.section.section-price
+	.main-cont
+		.section-title Цены на наши услуги
+		.price
+			.price-col.price-col--blue
+				.price-icon
+					+icon("doc","icon")
+				.price-name тариф
+				.price-title стандарт
+				.price-text  стандартный вариант оказания услуг нашими сотрудниками
+				.price-title-sub цена
+				.price-val.price-val--grey 70
+				.price-valut тыс. руб
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+			.price-col.price-col--main
+				.price-icon
+					+icon("like","icon")
+				.price-name тариф
+				.price-title акция
+				.price-text  Максимально выгодное предложение для вас. Весь пакет услуг остается прежним.
+				.price-title-sub цена
+				.price-val 56
+				.price-valut тыс. руб
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+			.price-col.price-col--blue
+				.price-icon
+					+icon("case","icon")
+				.price-name тариф
+				.price-title расширенный
+				.price-text  Если вас большой заказ, мы с радостью поможем вам решить вашу задачу
+				.price-title-sub цена
+				.price-val.price-val--text индивидуально
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+//section-price-end
+
+//section-advance
+#advance.section.section-advance
+	.main-cont
+		.section-title Почему выбирают нас
+		.advance
+			.advance-el
+				.advance-icon
+					+icon("attest","icon")
+				.advance-text Штат аттестованных кадастровых инженеров. Лицензии СРО.
+			.advance-el
+				.advance-icon
+					+icon("time","icon")
+				.advance-text Оперативность решения вопросов.
+			.advance-el
+				.advance-icon
+					+icon("worker","icon")
+				.advance-text Все работы выполняются нашими штатными специалистами
+
+			.advance-el
+				.advance-icon
+					+icon("money","icon")
+				.advance-text Окончательный расчет производится по факту выполнения работ.
+			.advance-el
+				.advance-icon
+					+icon("posred","icon")
+				.advance-text Мы работаем без посредников, поэтому Вы экономите свои средства и время.
+			.advance-el
+				.advance-icon
+					+icon("result","icon")
+				.advance-text Более 1000 выполненных объектов по Москве и Московской области.
+//section-advance-end
+
+//section-cert
+#sert.section.section-cert
+	.section-filter
+	.main-cont
+		.section-title Наши лицензии
+		.cert.owl-carousel
+			- for (var i = 0; i < 5; i++)
+				a(href="img/cert-#{i+1}.jpg" rel="group-elemen").fancybox.cert-el
+					img(src="img/cert-#{i+1}.jpg", alt="")
+			
+//section-cert-end
+
+//section-contact
+#contact.section.section-contact
+	.main-cont
+		.section-title Наши контакты
+		.contact
+			.contact-form
+				.main-form
+					.form-title успейте оставить заявку
+					.form-title-sub До конца 
+					.form-month Мая 
+					form(action="#")
+						input(type="text" placeholder="Ваше имя" name="name")
+						input(type="text" placeholder="Ваш телефон" name="phone")
+						input(type="text" placeholder="Ваша почта" name="mail")
+						textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+						input(type="submit" value="Отправить заявку").btn
+					.form-foter-text  Оставьте заявку и мы ответим вам в самое короткое время. Ждем вас!
+				.contact-info
+					.map
+						script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false")
+				
+					.contact-row-wrap
+						.contact-row
+							.contact-icon 
+								+icon("placeholder","icon")
+							.contact-text Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+						.contact-row
+							.contact-icon 
+								+icon("phone-call","icon")
+							.contact-text +7 (495) 514-84-13
+						.contact-row
+							.contact-icon 
+								+icon("mail","icon")
+							.contact-text info@cgiku.ru
+//section-contact-end
+
+.modal.modal-true
+	.modal-wrap
+		+icon("interface","icon")
+		.modal-true-text Ваша заявка принята
+include ./block_html/_script.jade

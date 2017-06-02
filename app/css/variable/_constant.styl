@@ -1,0 +1,134 @@
+// ============================ Curent color ============================
+
+navy = #001F3F
+blue = #5366ac
+aqua = #7FDBFF
+teal = #39CCCC
+olive = #3D9970
+green = #8fbf3e
+lime = #01FF70
+yellow = #FFDC00
+orange = #FF851B
+red = #FF4136
+fuchsia = #F012BE
+purple = #B10DC9
+maroon = #85144B
+white = #FFFFFF
+silver = #DDDDDD
+gray = #AAAAAA
+black = #111111
+
+$main-text-color = black
+$link-color = black
+$link-color-visited = grey
+$link-color-hover = black
+
+//  ============================ Typography ============================ 
+
+//webfont('RUB', 'rouble-webfont', 'normal')
+//Add fotn rub write .rub a - (a,b,c,d - change type font)
+
+//webfont('PT Sans', 'PT Sans', 'normal')
+$v-font =  'Roboto'
+
+$weigh-light = 300
+$weigh-normal = 400
+$weigh-bold = 700
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+.type--xs
+	typeSize(12,10)
+	
+.type--sm
+	typeSize(14,12)
+
+.type--main
+	typeSize(16,14)
+
+.type--lg
+	typeSize(20,16)
+
+.type--xl
+	typeSize(26,18)
+
+	
+// ============================ Buttons ============================
+
+btnStyle(bg-btn,color-btn)
+	background bg-btn
+	color color-btn
+	border 1px solid color-btn
+	&:hover
+		background darken(bg-btn,20)
+		color color-btn
+
+btnStyleLight(br-btn,color-btn)
+	color color-btn
+	border br-btn solid color-btn
+	&:hover
+		color darken(color-btn,20)
+		border br-btn solid darken(color-btn,20)
+		
+.btn
+	up()
+	br(4px)
+	tr(all)
+	display inline-block
+	margin-bottom 20px
+	border 1px solid black
+	padding 5px 10px
+	background none
+	&:hover
+		cursor pointer
+		
+.btn--sm
+	@extend .btn
+	font-size 10px
+	padding 5px 10px
+	
+.btn--md
+	@extend .btn
+	font-size 12px
+	padding 10px 20px
+	
+.btn--lg
+	@extend .btn
+	font-size 20px
+	padding 10px 30px
+
+.btn--mobile
+	@extend .btn
+	+below(768px)
+		width 100%
+		text-align center
+
+.btn--green
+	@extend .btn
+	btnStyle(green,white)
+	
+.btn--green-light
+	@extend .btn
+	btnStyleLight(1px,green)
+	
+button
+	font-family $v-font
+
+// ============================ Inputs ============================
+
+input,textarea,select
+	border 0px
+	padding 10px 15px
+	border 1px solid #e8e7e7
+	resize: none
+	outline: 0 !important
+	border-radius 4px
+	font-family $v-font
+	display block!important
+	margin-bottom 10px
+	focus(green)
+	placeholder(black)
+

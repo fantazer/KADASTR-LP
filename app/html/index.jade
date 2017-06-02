@@ -1,0 +1,294 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.head-container
+	//header
+	.header
+		.top-line
+			.main-cont
+				.top-line-wrap
+					.mobile-logo
+						img(src="img/logo-white.png", alt="")
+					.top-line-info
+						.top-line-el
+							.top-line-el-title Работа горячей линии:
+							.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
+						.top-line-el
+							.top-line-el-title Прием онлайн-заявок:
+							.top-line-el-info Круглосуточно
+					.top-line-loc
+						.top-line-loc-el
+							.top-line-loc-icon
+								+icon("metro","icon")
+							.top-line-loc-text Варшавская
+						.top-line-loc-el
+							.top-line-loc-icon
+								+icon("metro","icon")
+							.top-line-loc-text Каширская
+	//header-end
+
+	//nav
+	.nav
+		.main-cont
+			.nav-wrap
+				.nav-toggle
+					+icon("menu","icon")
+				.menu-wrap
+					.menu
+						a(href="#info" rel='m_PageScroll2id').menu-el Зачем это нужно
+						a(href="#step" rel='m_PageScroll2id').menu-el Как мы работаем
+						a(href="#price" rel='m_PageScroll2id').menu-el Наши цены
+						a(href="#advance" rel='m_PageScroll2id').menu-el Почему выбирают нас
+						a(href="#sert" rel='m_PageScroll2id').menu-el Наши лицензии
+						a(href="#contact" rel='m_PageScroll2id').menu-el Контакты
+				.nav-phone 
+					a(href="tel:+7 (495) 514-84-13").nav-phone-el 
+						+icon("phone-call","icon")
+						| +7 (495) 514-84-13
+
+
+	//nav-end
+
+//section main
+.section.section-main
+	.section-main-filter
+	.main-cont
+		.main-wrap
+			.main-info
+				.main-logo
+					img(src="img/logo.png", alt="")
+				.main-title Технический план помещения для регистрации договора аренды
+				//.main-text Обезопасьте себя от преждевременного неожиданного «выселения»
+
+			.main-form
+				.form-title Оставьте свою заявку
+				.form-title-sub и мы свяжемся с вами через
+				.form-month 5 минут
+				form(action="#")
+					input(type="text" placeholder="Ваше имя" name="name")
+					input(type="text" placeholder="Ваш телефон" name="phone")
+					input(type="text" placeholder="Ваша почта" name="mail")
+					textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+					input(type="submit" value="Отправить заявку").btn
+				.form-foter-text  Оставьте заявку и мы ответим Вам в самое короткое время. Ждем Вас!
+//section main-end
+
+
+//section-info
+#info.section.section-info-two
+	.main-cont
+		.section-info__wrap
+			.section-info__img
+				img(src="img/section-img-4.png", alt="")
+			.section-info__content
+				.section-info__title ЗАЧЕМ ЭТО НУЖНО
+				.section-info__text
+					p Зарегистрировав право аренды помещения, Вы обезопасите себя от преждевременного неожиданного «выселения» Вас из арендуемого помещения, в котором Вы за свои средства сделали ремонт и установили электрооборудование.
+					p Кроме того, если собственник помещения решит его продать, то он будет обязан предупредить Вас об этом, а также должен будет сообщить покупателю, что помещение сдается Вам в аренду. После заключения договора купли-продажи новый собственник помещения обязан перезаключить договор аренды с Вами на тех же условиях и до той же даты, указанной в предыдущем договоре аренды.
+					p Немаловажным аспектом является и облегчение судебных разбирательств в случаях взыскания платы за аренду, возмещения ущерба за причиненный имуществу вред, досрочном расторжении договора аренды и т.д.
+
+//section-info-end
+
+//section info
+.section.section-info
+	.main-cont
+		.section-info__wrap
+			.section-info__content
+				.section-info__title Как это может Вам помочь
+				.section-info__text
+					p	С 01.01.2017 г. с момента вступления в силу Федерального закона № 218-ФЗ от 13.07.2017 «О государственной регистрации недвижимости» отсутствие в государственном реестре недвижимости сведений о части помещения, передаваемого в долгосрочную аренду (на срок более 1 года), является основанием для приостановления в государственной регистрации договора аренды.
+					p	В процессе кадастрового учета части помещения происходит индивидуализация такой части как объекта сделки, в результате чего часть приобретает характеристики, которые позволяют выделить ее из других объектов. Это опять же говорит о том, что формируемая часть помещения должна быть строго ограничена конструктивными элементами здания (стенами, перегородками, потолком и т.п.). Важно понимать, что нельзя оформить аренду на «угол» помещения. Арендуемое помещение должно быть строго изолировано или обособлено от других помещений в здании.
+					p Для внесения в государственный кадастр недвижимости сведений о части помещения, кадастровым инженером формируется технический план на учет изменений помещения в связи с образованием его части (частей). Приложением к такому техническому плану будет являться договор аренды помещения, подписанный собственником исходного помещения и арендатором. В договоре аренды необходимо четко описать местоположение формируемой части, а также указать ее местоположение на поэтажном плане, который должен являться неотъемлемой частью договора аренды помещения.
+					p Поскольку договор аренды подлежит государственной регистрации, учет части помещения и государственная регистрация аренды осуществляются одновременно.
+					p По итогам кадастрового учета Вы получите выписку из ЕГРН, в которой отдельными строками будет прописано наименование образованной части, ее площадь, местоположение, наименование арендатора и срок действия аренды.
+
+			.section-info__img
+				img(src="img/section-img-2.jpg", alt="")
+//section info-end
+
+
+
+//section-step
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text Отправляете нам заявку или звоните
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text Анализируем документы по Вашему объекту.
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text Заключаем договор
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text Заказываем исходные сведения из ГКН
+			
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text Формируем технический план
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+						.step-triangle
+					.step-content
+						.step-numb 06
+						.step-text Передаем готовый технический план Вам для его подачи в Орган государственной регистрации
+
+		.step-total Получаете все необходимые документы
+//section-step-end
+
+//section-price
+#price.section.section-price
+	.main-cont
+		.section-title Цены на наши услуги
+		.price
+			.price-col.price-col--blue
+				.price-icon
+					+icon("doc","icon")
+				.price-text  Образование части помещения под аренду площадью
+				.price-space до 100 кв.м
+				.price-title-sub цена
+				.price-val.price-val--grey 10
+				.price-valut тыс. руб
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+			.price-col.price-col--blue
+				.price-icon
+					+icon("like","icon")
+				.price-text  Образование части помещения под аренду площадью
+				.price-space 100 - 300 кв.м
+				.price-title-sub цена
+				.price-val 25
+				.price-valut тыс. руб
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+			.price-col.price-col--blue
+				.price-icon
+					+icon("case","icon")
+				.price-text  Образование части помещения под аренду площадью
+				.price-space 300 - 1000 кв.м
+				.price-title-sub цена
+				.price-val 40
+				.price-valut тыс. руб
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+			.price-col.price-col--blue
+				.price-icon
+					+icon("handshake","icon")
+				.price-text  Образование части помещения под аренду площадью
+				.price-space
+					span более
+					| 1000 кв.м
+				.price-title-sub цена
+				.price-val.price-val--text индивидуально
+				a(href="#contact" rel='m_PageScroll2id').price-get заказать
+//section-price-end
+
+//section-advance
+#advance.section.section-advance
+	.main-cont
+		.section-title Почему выбирают нас
+		.advance
+			.advance-el
+				.advance-icon
+					+icon("attest","icon")
+				.advance-text Штат аттестованных кадастровых инженеров. Лицензии СРО.
+			.advance-el
+				.advance-icon
+					+icon("time","icon")
+				.advance-text Оперативность решения вопросов.
+			.advance-el
+				.advance-icon
+					+icon("worker","icon")
+				.advance-text Все работы выполняются нашими штатными специалистами
+
+			.advance-el
+				.advance-icon
+					+icon("money","icon")
+				.advance-text Окончательный расчет производится по факту выполнения работ.
+			.advance-el
+				.advance-icon
+					+icon("posred","icon")
+				.advance-text Мы работаем без посредников, поэтому Вы экономите свои средства и время.
+			.advance-el
+				.advance-icon
+					+icon("result","icon")
+				.advance-text Более 1000 выполненных объектов по Москве и Московской области.
+//section-advance-end
+
+//section-cert
+#sert.section.section-cert
+	.section-filter
+	.main-cont
+		.section-title Наши лицензии
+		.cert.owl-carousel
+			- for (var i = 0; i < 5; i++)
+				a(href="img/cert-#{i+1}.jpg" rel="group-elemen").fancybox.cert-el
+					img(src="img/cert-#{i+1}.jpg", alt="")
+			
+//section-cert-end
+
+//section-contact
+.section.section-contact
+	.main-cont
+		#contact.section-title Наши контакты
+		.contact
+			.contact-form
+				.main-form
+					.form-title Оставьте свою заявку
+					.form-title-sub и мы свяжемся с вами через
+					.form-month 5 минут
+					form(action="#")
+						input(type="text" placeholder="Ваше имя" name="name")
+						input(type="text" placeholder="Ваш телефон" name="phone")
+						input(type="text" placeholder="Ваша почта" name="mail")
+						textarea(name="comment", cols="30", rows="4" placeholder="Местоположение Вашего обьекта")
+						input(type="submit" value="Отправить заявку").btn
+					.form-foter-text  Оставьте заявку и мы ответим Вам в самое короткое время. Ждем Вас!
+				.contact-info
+					.map
+						script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false")
+				
+					.contact-row-wrap
+						.contact-row
+							.contact-icon 
+								+icon("placeholder","icon")
+							.contact-text Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+						.contact-row
+							.contact-icon 
+								+icon("phone-call","icon")
+							.contact-text +7 (495) 514-84-13
+						.contact-row
+							.contact-icon 
+								+icon("mail","icon")
+							.contact-text info@cgiku.ru
+//section-contact-end
+
+.modal.modal-true
+	.modal-wrap
+		+icon("interface","icon")
+		.modal-true-text Ваша заявка принята
+include ./block_html/_script.jade
