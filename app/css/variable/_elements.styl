@@ -120,7 +120,7 @@
 	position relative
 	bgi("bg-2.jpg")
 	bg-full()
-	
+	background-attachment: fixed
 .section-main-filter
 	position absolute
 	top 0
@@ -157,15 +157,17 @@
 		width 50%
 .main-title 
 	+below(1200px)
-		font-size 24px
+		font-size 38px
 		margin-bottom 0
 	+below(768px)
+		up()
 		text-align center
 		font-size 18px
 		margin-bottom: 30px
 		font-weight: bold
-		up()
-
+		line-height: 28px
+		padding: 10px
+		background: #43555d
 	font-size 56px
 	font-weight: bold
 	line-height: 64px
@@ -227,8 +229,7 @@
 		padding 20px
 		form
 			width 100%
-		textarea
-			width 100%
+
 	background white 
 	width 35%
 	flex(mid)
@@ -243,6 +244,8 @@
 		padding 15px 0
 		br(25px) 
 		margin-top 40px
+	textarea
+			width 100%
 .form-title
 	+below(1200px)
 		font-size 16px
@@ -291,6 +294,7 @@
 .section-info__title 
 	+below(768px)
 		font-size 20px
+		text-align: center
 	up() 
 	font-size 34px
 	font-weight bold
@@ -329,7 +333,7 @@
 	left 0
 	width 100%
 	height 100%
-	background rgba(76, 99, 109, 0.91)
+	background rgba(76, 99, 109, 0.75)
 //.section 
 .section-step 
 	position relative
@@ -342,7 +346,7 @@
 	font-size 42px
 	text-align center
 	up()
-.step 
+.step
 	+below(768px)
 		margin-top 30px
 	margin-top 100px
@@ -361,12 +365,24 @@
 	br(10px)
 	background white 
 	width 80%
+	position: relative
+.step-course
+	+below(768px)
+		display: none
+	position: absolute
+	width: 55%
+	height: 2px
+	background: white
+	left: 98%
+	top: 97%
+	transform:rotate(20deg)
+
 .step-numb 
 	+below(768px)
 		width 90px
 	color black
 	flex(mid)
-	border-right 1px solid blue
+	border-right 1px solid rgb(74, 101, 116)
 	padding  20px 
 	font-size 32px
 	font-weight bold 
@@ -376,34 +392,38 @@
 		justify-content flex-start
 	flex(mid) 
 	padding 20px 
-	font-size 14px
+	font-size 13px
 .step-line 
 	+below(768px)
 		display none
 	width 10%
-	border-right 2px solid white
-	position relative
-	height auto
+	//border-right 2px solid white
+	//position relative
+	//height auto
 .step-dot
-	size 30px
-	round()
-	background white  
-	margin-top -15px
-	position absolute
-	right -15px
-	top 50%
+	//size 30px
+	//round()
+	//background white
+	//margin-top -15px
+	//position absolute
+	//right -15px
+	//top 50%
 .step-row--right
 	f()
 	justify-content flex-end
 	width 100%
 	margin-left -2px
 	.step-line
-		height 100%
-		border 0
-		border-left 2px solid white
+		//height 100%
+		//border 0
+		//border-left 2px solid white
 	.step-dot
-		right initial
-		left -15px
+		//right initial
+		//left -15px
+	.step-course
+		left: initial
+		right 98%
+		transform:rotate(-20deg)
 //.step-dot 
 .step-total
 	+below(768px)
@@ -421,18 +441,33 @@
 	triangle('down', 20px, white)
 	position absolute
 	bottom -20px
-	left -20px 
-	
+	left -20px
+	display: none
+
+.step-course-cont
+	position: relative
+
+.step-course-arrow
+	triangle('down', 10px, white)
+	position absolute
+	right: 2px
+	transform: rotate(-94deg)
+	z-index: 20
+	top: -4px
+	display: none
+
 .section-price
 	+below(1024px)
 		background: none
 	position relative
-	bgi('item-4-light.png')
+	bgi('bg-6.jpg')
 	bg-full()
-
+	.section-title
+		background: white
+	background-attachment: fixed
 //.section-filter 
 //.main-cont 
-//.section-title 
+//
 .price 
 	+below(978px)
 		fw()
@@ -475,20 +510,23 @@
 .price-text 
 	+below(768px)
 		margin-bottom 10px
-	font-size 14px
+	font-size 16px
 	color grey
 	text-align center
 	margin-bottom 20px
-.price-title-sub 
+	padding-bottom: 20px
+	border-bottom:1px solid white
+.price-title-sub
 	up()
 .price-val 
-	font-size 100px
+	font-size 72px
+	//padding: 60px 0
 .price-val--text
 	+below(768px)
 			height auto	
 			padding 20px 0
 	font-size 36px
-	height 190px
+	height 145px
 	flex(mid)
 .price-valut 
 	up()
@@ -508,7 +546,7 @@
 	&:hover
 		background darken(blue,10)
 .price-col--blue
-	background #4c636d
+	background #263238
 	color white 
 	.price-icon 
 		border 2px solid white
@@ -518,7 +556,7 @@
 		color white 
 	.price-get 
 		background white 
-		color blue
+		color #263238
 .price-col--main
 	+below(768px)
 		padding 20px
@@ -560,7 +598,7 @@
 	font-size 18px
 .section-cert
 	position relative
-	bgi('bg-1.jpg')
+	bgi('bg-8.jpg')
 	bg-full()
 	.section-title
 		color white
@@ -702,3 +740,41 @@ textarea.error
 	.icon
 		fill white
 		size 20px
+
+
+.person-data
+	+below(1024px)
+		width: 100%
+	f()
+	width: 70%
+	margin: 20px auto
+	position: relative
+	label.error
+		position: absolute
+		width: 100%
+		text-align: center
+		bottom -40px
+
+.person-data-check
+	width: 25px
+	input
+		margin-bottom: 0
+		&:focus
+			border 0
+			box-shadow 0 0 0
+
+.person-data-text
+	font-size: 14px
+	line-height: 1
+	text-align: center
+	a
+		color blue
+		text-decoration: underline
+
+label.error
+	up()
+	text-align: center
+	width: 100%
+	font-size: 10px
+	color red
+	font-weight: 700

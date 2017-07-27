@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" autoUpload="On explicit save action">
     <serverData>
       <paths name="JUREXLAW">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="KADASTR">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/xn----7sbbatcd8btdprs7b.xn--p1ai/www" local="$PROJECT_DIR$/dist" web="" />
           </mappings>
         </serverdata>
       </paths>
@@ -24,5 +31,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
